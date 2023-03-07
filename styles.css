@@ -1,0 +1,22 @@
+/* Set a max-width for the navbar brand image for better responsiveness */
+.navbar-brand img {
+	max-height: 100%;
+}
+
+/* Style the hamburger icon */
+.navbar-toggler-icon {
+	background-image: url('https://cdn.iconscout.com/icon/free/png-256/menu-278131.png');
+	background-size: cover;
+}
+
+/* Hide the hamburger icon on desktop */
+@media (min-width: 992px) {
+	.navbar-toggler-icon {
+		display: none;
+	}
+}
+
+/* Show the navbar links when the show class is present */
+#navbarNav.show {
+	display: block !important;
+}
